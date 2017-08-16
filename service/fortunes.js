@@ -8,7 +8,6 @@ const fortunes = fs.readFileSync('fortunes.txt', 'utf8').split('\n');
  * @return {[type]} [description]
  */
 function getRandomFortune() {
-  console.log('safddfsfds');
   // pick a random index in the fortunes array
   const index = Math.floor(Math.random() * fortunes.length);
 
