@@ -56,6 +56,11 @@ app.get('/robots', (req, res) => {
   Robot.find(filter).then(robots => res.json(robots));
 });
 
+// get a specific robot
+app.get('/robots/:username', (req, res) => {
+  Robot.findOne({ username: req.params.username }).then(robot => res.json(robot));
+});
+
 // start express
 mongoose
   .connect('mongodb://localhost:27017/robots', { useMongoClient: true })
