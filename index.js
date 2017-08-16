@@ -30,6 +30,7 @@ app.use(bodyParser.urlencoded({ extended: false }));
 
 // my endpoints
 app.get('/', (req, res) => res.render('fortune'));
+app.get('/numbers', (req, res) => res.render('numbers'));
 //app.get('/robots', (req, res) => res.render('robots'));
 
 // my rest endpoints
@@ -38,7 +39,7 @@ app.get('/', (req, res) => res.render('fortune'));
 app.get('/fortunes/random', (req, res) => res.json(fortunes.getRandomFortune()));
 
 // get the lucky numbers
-app.get('/luckyNumbers', (req, res) => res.json(fortunes.getLuckyNumbers()));
+app.get('/luckyNumbers', (req, res) => res.json(fortunes.getLuckyNumbers(req.query.num, req.query.max)));
 
 // start express
 app.listen(3000, () => console.log('ready to roll!!'));

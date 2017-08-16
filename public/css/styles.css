@@ -7,7 +7,16 @@ body {
 
 button {
   font-size: 2em;
+  margin: 1em;
+}
+
+input {
+  font-size: 2em;
   margin: 2em;
+  display: block;
+  margin: 1em auto;
+  width: 75%;
+  text-align: center;
 }
 
 #fortune {
