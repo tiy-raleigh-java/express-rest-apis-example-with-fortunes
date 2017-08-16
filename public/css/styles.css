@@ -1,0 +1,24 @@
+body {
+  font-family: 'DejaVu Sans', Arial, Helvetica, sans-serif;
+  width: 75%;
+  margin: auto;
+  text-align: center;
+}
+
+button {
+  font-size: 2em;
+  margin: 2em;
+}
+
+#fortune {
+  background-image: url(/images/cookie-left.png), url(/images/cookie-right.png), url(/images/paper.png);
+  background-repeat: no-repeat, no-repeat, repeat-x;
+  background-position: top left, top right, top center;
+  background-size: auto, auto, 100% 268px;
+  height: 168px;
+  color: blue;
+  text-align: center;
+  padding-top: 63px;
+  padding-left: 234px;
+  padding-right: 283px;
+}
