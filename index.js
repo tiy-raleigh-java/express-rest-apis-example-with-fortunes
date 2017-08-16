@@ -33,6 +33,7 @@ app.get('/', (req, res) => res.render('fortune'));
 //app.get('/robots', (req, res) => res.render('robots'));
 
 // my rest endpoints
+app.get('/fortunes/random', (req, res) => res.json(fortunes.getRandomFortune()));
 
 // start express
 app.listen(3000, () => console.log('ready to roll!!'));
